@@ -31,16 +31,29 @@ This is the content brain for KnownVisitors' X/Twitter presence. Every post live
 - Links go in replies, never in the main post
 
 ## Content Pillars (Rotate These)
+
+### Core Product Pillars
 1. **Problem Awareness** — make people feel the pain of anonymous traffic
 2. **Reframes** — change how people think about traffic/marketing
-3. **Founder Journey** — build in public, real experiences
-4. **Hot Takes** — contrarian angles on marketing, ads, retargeting
-5. **Proof/Results** — real stats when available (none yet)
+3. **Hot Takes** — contrarian angles on marketing, ads, retargeting
+4. **Proof/Results** — real stats when available (none yet)
+
+### Founder & Business Pillars
+5. **Founder Journey** — build in public, real experiences, wins and struggles
+6. **SaaS Advice** — lessons learned about building, scaling, pricing, churn, metrics
+7. **Bootstrapping** — the grind of building without (or before) funding, staying lean, making scrappy decisions
+8. **Raising Money** — fundraising insights, investor dynamics, when/whether to raise, term sheets, cap tables
+9. **Vibe Coding** — building with AI tools, using Claude/GPT to ship faster, the new wave of AI-assisted development
+
+### Value-Add Pillars
+10. **Free Game** — genuinely useful advice people can apply immediately (marketing tactics, growth hacks, tool recommendations, frameworks) — no pitch, just value
+11. **Industry Commentary** — reacting to news, trends, drama in SaaS/e-commerce/marketing/tech
+12. **Founder Takes** — opinions on startup culture, hustle culture, remote work, hiring, the realities of building a company
 
 ## How Posts Work
 
 ### Creating a Draft
-- Search the web for current news/trends in marketing, e-commerce, SaaS, privacy, ad tech
+- Search the web for current news/trends in marketing, e-commerce, SaaS, privacy, ad tech, startup funding, AI/vibe coding, bootstrapping, and general business
 - Check `published/` and `drafts/` to avoid repeating topics or angles
 - Write a post tied to something REAL happening right now
 - Save to `drafts/` as `YYYY-MM-DD.md`
@@ -50,7 +63,7 @@ This is the content brain for KnownVisitors' X/Twitter presence. Every post live
 ---
 date: YYYY-MM-DD
 status: draft
-pillar: [problem-awareness|reframe|founder-journey|hot-take|proof]
+pillar: [problem-awareness|reframe|hot-take|proof|founder-journey|saas-advice|bootstrapping|raising-money|vibe-coding|free-game|industry-commentary|founder-takes]
 source: "Brief description of the news/trend that inspired this"
 source_url: "URL if applicable"
 ---
