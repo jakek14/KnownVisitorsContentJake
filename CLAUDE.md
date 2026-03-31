@@ -72,6 +72,12 @@ Every post should live in the WORLD that KnownVisitors operates in — marketing
 - Check the last 5 posts. If any of the last 4 mentioned KnownVisitors, do NOT mention it.
 - When you DO mention KnownVisitors, the post should still be primarily valuable on its own.
 - Track this with `mentions_kv: true|false` in frontmatter.
+- **When a post mentions KV (`mentions_kv: true`)**: include a first reply with a short CTA + the knownvisitors.com link. The reply should feel natural, not spammy. The CTA comes first, then the link. Examples:
+  - "See who's on your site right now — knownvisitors.com"
+  - "We built this so you never lose another lead — knownvisitors.com"
+  - "Try it free, no demo required — knownvisitors.com"
+- The link goes in the **reply**, never in the main post (X penalizes links in the main post by 30-50% reach).
+- Add the reply text under a `## Reply` section in the draft file, below the post.
 
 ## Content Pillars (Rotate These)
 
@@ -129,6 +135,10 @@ For threads, format as:
 
 **Tweet N**
 [Closing tweet, optional soft CTA — ≤ 280 chars]
+
+## Reply (only if mentions_kv: true)
+
+[Short CTA + knownvisitors.com link. Example: "See who's visiting your site right now — knownvisitors.com"]
 
 ## Context
 
