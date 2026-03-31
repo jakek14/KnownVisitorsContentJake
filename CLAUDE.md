@@ -20,10 +20,7 @@ linkedin/
   company/published/   — posted company LinkedIn content
   company/archive/     — rejected/old company LinkedIn content
 meta/
-  founder/drafts/      — CEO's Facebook/Instagram drafts
-  founder/published/   — posted CEO Meta content
-  founder/archive/     — rejected/old CEO Meta content
-  company/drafts/      — KnownVisitors brand Meta drafts
+  company/drafts/      — KnownVisitors brand Meta drafts (Facebook + Instagram)
   company/published/   — posted brand Meta content
   company/archive/     — rejected/old brand Meta content
 ```
@@ -314,37 +311,58 @@ source_url: "URL if applicable"
 
 ---
 
-# META-SPECIFIC RULES (Facebook + Instagram)
+# META-SPECIFIC RULES (Facebook + Instagram — Company Page Only)
 
 Meta posts are cross-posted: same post goes to both Facebook and Instagram. Every Meta post includes an image. The agent generates both the caption and a Nano Banana image prompt.
 
 **Meta posts are less frequent than X and LinkedIn** — not every daily run needs a Meta post. Generate Meta posts only when specifically requested or when the content is highly visual and well-suited to the format.
 
-## Meta Founder Voice
-- Personal, founder-led — same as X and LinkedIn founder voice
-- Uses "I" voice
+## Meta Voice
+- Uses "we" voice — this is the KnownVisitors brand account
+- Authoritative but approachable — the brand that knows this space
 - More visual storytelling — the image carries weight, caption complements it
 - Can be shorter than LinkedIn — the image does half the work
-
-## Meta Company Voice
-- Uses "we" voice
-- Authoritative brand presence
-- Product-focused content works well here — announcements, stat cards, industry visuals
-- Still human, not corporate
+- Still human, not corporate. No press releases, no buzzwords.
+- B2B buyers on Meta are NOT in buying mode — build brand awareness and trust, don't hard-sell
 
 ## Meta Caption Sizing
-- **Short** (target: ≤ 150 characters): Punchy line that pairs with a strong image. Works best on Instagram.
-- **Medium** (target: 150–500 characters): Developed thought with hook and closing line.
-- **Long** (target: 500–1,000 characters): Deeper context, mini-story. Better for Facebook than Instagram.
+- **Short** (target: ≤ 125 characters): Punchy line that pairs with a strong image. Fully visible on Instagram without truncation.
+- **Medium** (target: 125–500 characters): Developed thought with hook and closing line. Hook lands before the fold, value after.
+- **Long** (target: 500–1,000 characters): Deeper context, mini-story. Use line breaks generously.
 
 **Hard rules:**
 - Every Meta post MUST include an image prompt — no text-only posts.
-- Hook must be in the first line — Instagram truncates after ~125 characters.
-- 3-5 hashtags at the end (important for Instagram discovery).
+- The hook MUST land within the first **125 characters** — that's where Instagram truncates on mobile before "...more."
+- **No hashtags.** Instagram capped hashtags at 5 and removed hashtag-following in 2024. Hashtags are now near-useless for discovery. Use keyword-rich captions instead — caption SEO has replaced hashtags as the primary discovery mechanism.
+- **No links in the post body.** Meta limits non-verified pages to 2 link posts per month. Even within that limit, link posts get crushed algorithmically — only 2% of Facebook's most-viewed posts include links. If a link is needed, put it in the first comment.
 
 ## Meta KV Mention Rules
-- **Founder pages**: 80/20 ratio (same as other platforms)
-- **Company pages**: 60/40 ratio (same as other platforms)
+- **60/40 ratio**: 60% pure value, 40% mention KnownVisitors
+- Check last 5 meta/company posts — if last 2 mentioned KV, skip it
+
+## Meta Algorithm Rules
+
+### What Meta Rewards
+- **Original content** — Meta formally penalizes reposted/unoriginal content. Accounts caught get classified as "non-recommendable."
+- **Saves, shares, and DM sends** — weighted far higher than likes. Create "saveable" content: frameworks, checklists, step-by-step guides.
+- **Engagement velocity in the first 30-60 minutes** — respond to every comment immediately.
+- **Carousel/multi-image posts** — outperform single images (~10% engagement vs 7%). Swiping triggers extended time-on-post.
+- **Keyword-rich captions** — Meta's algorithm reads your caption to match content to interested users. Include terms your ICP searches for (e.g., "website visitor identification," "lead generation," "anonymous traffic").
+- **Consistent posting cadence** — activity bursts followed by silence get penalized.
+
+### What Meta Penalizes
+- **External links in post body** — massive reach reduction + 2-link monthly cap for non-verified pages
+- **Engagement bait** — "Tag 3 friends!" is explicitly penalized
+- **Over 5 hashtags on Instagram** — algorithmically suppressed
+- **Repetitive/low-quality content** — flagged as noise
+- **Identical cross-posts** — Meta's 2025 policy change penalizes "unoriginal" content, so identical posts across platforms can trigger reduced visibility
+
+## Meta Engagement & CTAs
+- **Specific CTAs outperform generic ones by 3x.** Always end with a concrete ask.
+- Good: "Save this for your next QBR" / "Drop a question below — we'll answer every one"
+- Bad: "Let me know what you think" / "Like if you agree"
+- ~50% of posts should end with a specific CTA
+- **Reply to every comment within 1 hour** — doubles comment count and creates algorithmic momentum
 
 ## Image Prompt Guidelines — KnownVisitors Brand Style
 
@@ -378,15 +396,15 @@ The `## Text Overlay` section contains the headline/subtitle to be manually plac
 - Text overlay should be in white or green on the dark background
 
 ## Meta Draft File Format
-Save to `meta/founder/drafts/` or `meta/company/drafts/` as `YYYY-MM-DD-HHMM-SS.md`
+Save to `meta/company/drafts/` as `YYYY-MM-DD-HHMM-SS.md`
 
 ```markdown
 ---
 date: YYYY-MM-DD
 platform: meta
-page: [founder|company]
+page: company
 status: draft
-pillar: [problem-awareness|reframe|hot-take|proof|founder-journey|saas-advice|bootstrapping|raising-money|vibe-coding|free-game|industry-commentary|founder-takes]
+pillar: [problem-awareness|reframe|hot-take|proof|saas-advice|free-game|industry-commentary]
 format: [short|medium|long]
 mentions_kv: [true|false]
 source: "Brief description of the news/trend that inspired this"
@@ -395,9 +413,7 @@ source_url: "URL if applicable"
 
 ## Post
 
-[Caption text for Facebook/Instagram]
-
-[3-5 hashtags at the end]
+[Caption text for Facebook/Instagram. No hashtags. Use keyword-rich language for discovery.]
 
 ## Visual Prompt
 
@@ -419,7 +435,7 @@ Subtitle: [Optional one-line subtitle]
 
 ### Creating Drafts
 - Search the web for current news/trends in marketing, e-commerce, SaaS, privacy, ad tech, startup funding, AI/vibe coding, bootstrapping, and general business
-- Check ALL page folders (`x/founder/`, `x/company/`, `linkedin/founder/`, `linkedin/company/`, `meta/founder/`, `meta/company/`) to avoid repeating topics
+- Check ALL page folders (`x/founder/`, `x/company/`, `linkedin/founder/`, `linkedin/company/`, `meta/company/`) to avoid repeating topics
 - Write a post tied to something REAL happening right now
 - Generate posts for the requested page(s) — different angles on the same topic, or different topics entirely
 - Save to the appropriate platform/page folder
