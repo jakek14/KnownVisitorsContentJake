@@ -369,18 +369,18 @@ Meta posts are cross-posted: same post goes to both Facebook and Instagram. Ever
 The image prompt goes into the `## Visual Prompt` section of the draft. It will be fed into Nano Banana to generate the image.
 
 ### Image Dimensions & Safe Zones
-- **Aspect ratio**: 4:5 (portrait) — this is the optimal format for both Facebook and Instagram feed. Takes up maximum screen space on mobile.
-- **Resolution**: 1080 x 1350 pixels
+- **Aspect ratio**: 1:1 (square) — works across both Facebook and Instagram feed.
+- **Resolution**: 1080 x 1080 pixels
 - **Instagram grid safe zone**: Instagram displays grid previews at 3:4. Keep the core visual within the center of the image so nothing important gets cropped in the grid view.
 - **Text overlay safe zone**: Keep all text overlay within the center ~70% of the image. Leave the top 14%, bottom 35%, and sides 6% clear of critical text/visuals — Instagram overlays UI elements (profile icon, CTA buttons) in these areas.
-- **Always include in the prompt**: "4:5 aspect ratio, 1080x1350 pixels, portrait orientation"
+- **Always include in the prompt**: "1:1 square aspect ratio, 1080x1080 pixels"
 
 ### KV Brand Rules for Image Prompts
 Every image prompt MUST include these brand elements:
 - **Color palette**: Black background, green (#27A848) accents, white highlights
 - **Aesthetic**: Dark, modern, premium tech — think SaaS dashboard, developer tool landing page
 - **Mood**: Confident, clean, minimal, high-contrast
-- **Style direction**: Always include "dark tech aesthetic, black background, green accent lighting, minimal, high contrast, modern SaaS visual, 4:5 portrait aspect ratio"
+- **Style direction**: Always include "dark tech aesthetic, black background, green accent lighting, minimal, high contrast, modern SaaS visual, 1:1 square aspect ratio"
 
 ### Clarity Rule — THE MOST IMPORTANT RULE
 **A person scrolling their feed should instantly understand what the image is about WITHOUT reading the caption.** The image must be dead simple. One concept. One focal point. No multi-step visual stories.
