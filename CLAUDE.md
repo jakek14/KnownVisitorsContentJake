@@ -42,14 +42,15 @@ Use these as inspiration, not templates. Rotate and adapt:
 - **Story hook (hypothetical only)**: "Picture this: $40k MRR, profitable, growing 15% MoM — and every VC says 'come back later.'"
 
 ## Character Limits & Post Sizing
-X has a 280-character limit per tweet (X Premium allows longer, but don't assume it).
+This account has X Basic — long-form posts up to 25,000 characters are supported.
 
-- **Short** (target: ≤ 200 characters): Punchy one-liners, hot takes, bold claims. High engagement ceiling. Aim for these often.
-- **Medium** (target: ≤ 280 characters): A complete thought with a hook and a punchline. Must fit in one tweet.
-- **Thread** (3-7 tweets, each ≤ 280 characters): For deeper stories, breakdowns, or multi-point takes. Structure: hook tweet → 3-5 value tweets → closing tweet with a soft CTA. Each tweet should stand on its own — someone might only see tweet 1 or get shown tweet 4.
-- **Question** (target: ≤ 200 characters): Engagement-focused. Ends with a genuine question that invites replies.
+- **Short** (target: ≤ 280 characters): Punchy one-liners, hot takes, bold claims. High engagement ceiling.
+- **Medium** (target: 280–800 characters): A developed thought with a hook, supporting point, and a strong closing line.
+- **Long** (target: 800–2,500 characters): Deep dives, step-by-step breakdowns, founder stories, detailed takes. Use line breaks generously — no walls of text. Think RetentionAdam-style long posts. These should feel like a mini-blog post on your timeline.
+- **Thread** (3-7 tweets, each ≤ 280 characters): A chain of connected tweets for multi-point takes. Structure: hook tweet → 3-5 value tweets → closing tweet with a soft CTA. Each tweet should stand on its own. Each tweet in a thread MUST be ≤ 280 characters.
+- **Question** (target: ≤ 280 characters): Engagement-focused. Ends with a genuine question that invites replies.
 
-**Hard rule**: Every single tweet (whether standalone or part of a thread) MUST be ≤ 280 characters. Count before saving. If it's over, cut it down — don't cheat with abbreviations.
+**Mix it up**: Don't post the same format twice in a row. Vary between short, medium, long, thread, and question.
 
 ## Engagement & Soft CTAs
 Replies carry **13.5x more algorithmic weight** than likes on X. Posts that generate conversation get dramatically more reach.
@@ -106,7 +107,7 @@ Every post should live in the WORLD that KnownVisitors operates in — marketing
 date: YYYY-MM-DD
 status: draft
 pillar: [problem-awareness|reframe|hot-take|proof|founder-journey|saas-advice|bootstrapping|raising-money|vibe-coding|free-game|industry-commentary|founder-takes]
-format: [short|medium|thread|question]
+format: [short|medium|long|thread|question]
 mentions_kv: [true|false]
 source: "Brief description of the news/trend that inspired this"
 source_url: "URL if applicable"
