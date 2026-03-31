@@ -383,27 +383,30 @@ Every image prompt MUST include these brand elements:
 - **Style direction**: Always include "dark tech aesthetic, black background, green accent lighting, minimal, high contrast, modern SaaS visual, 4:5 portrait aspect ratio"
 
 ### Clarity Rule — THE MOST IMPORTANT RULE
-**A person scrolling their feed should instantly understand what the image is about WITHOUT reading the caption.** If the visual requires explanation, it's too abstract. The image must communicate the concept on its own.
+**A person scrolling their feed should instantly understand what the image is about WITHOUT reading the caption.** The image must be dead simple. One concept. One focal point. No multi-step visual stories.
 
-Bad: abstract data streams, floating wireframes, geometric shapes with glowing dots — these look like generic tech graphics and mean nothing to a viewer.
+### Keep It Simple — Lessons Learned
+AI image generators (Nano Banana) produce unpredictable results with complex prompts. The more concepts you cram into one image, the worse it gets. What works:
 
-Good: a recognizable scene that tells a story at a glance — a laptop showing anonymous visitors becoming identified contacts, a split-screen before/after, a dashboard revealing real visitor names.
+**BEST approach — stat card style:**
+- A bold number or stat as the visual centerpiece (e.g., a large "58%" glowing in green)
+- Clean dark background with subtle gradient
+- Text overlay does the talking — headline + subtitle
+- This is the safest, most effective format. Opensend, RB2B, and top B2B brands use this style.
 
-### What Works Well (prompt for these)
-- **Before/after scenes** — left side: shadowed/anonymous figures on a website. Right side: clear profile cards with names, emails, job titles revealed. Instantly communicates "we identify visitors."
-- **Recognizable dashboards** — a laptop or phone screen showing a notification: "New visitor identified: [name]" with a contact card appearing. People understand dashboards.
-- **Split-screen reveals** — blurred/hidden visitor on one side, fully identified contact on the other. Clear visual metaphor.
-- **Relatable business scenes** — a website with a magnifying glass revealing a visitor's identity card. Simple, recognizable.
-- **Stat-focused backgrounds** — clean dark background designed to support bold text overlay. Simple gradient or subtle pattern. The text does the work.
-- Keep the center of the image relatively clean for the text overlay
+**ACCEPTABLE approach — single simple metaphor:**
+- ONE recognizable object or scene — a laptop, a magnifying glass, a lock, a dashboard
+- No multi-step visual stories (e.g., "Google results → arrow → website → contact card" is too complex)
+- If you can't describe the image in one sentence, it's too complicated
 
 ### What to Avoid (never prompt for these)
-- **Abstract/vague visuals** — flowing data streams, network nodes, connection maps, geometric shapes. These look like generic stock art and communicate nothing.
+- **Complex visual narratives** — multiple elements connected by arrows, flows, or sequences. AI generates these poorly and viewers can't parse them at a glance.
+- **Abstract/vague visuals** — flowing data streams, network nodes, connection maps, geometric shapes, floating wireframes. These look like generic stock art and communicate nothing.
 - **Text in the image** — Nano Banana garbles text. Text goes in the overlay, not the AI image.
-- Realistic human faces or photos — use silhouettes or stylized figures instead
-- **Different colored silhouettes** — all silhouettes must be the SAME color/shade (dark gray or green). Never render silhouettes in different skin tones or contrasting colors that could be interpreted as racial. Use glow effects, contact cards, or outlines to differentiate identified vs anonymous — NOT color differences on the figures themselves.
-- **Off-center focal points** — the key visual (the identified visitor, the reveal moment, the main concept) must be centered in the image, not pushed to the side
-- Busy, cluttered compositions — keep it clean and minimal
+- **Realistic human faces or photos** — use silhouettes or stylized figures instead
+- **Different colored silhouettes** — all silhouettes must be the SAME color/shade (dark gray or green). Never render silhouettes in different skin tones or contrasting colors that could be interpreted as racial. Use glow effects, contact cards, or outlines to differentiate — NOT color differences on the figures themselves.
+- **Off-center focal points** — the key visual must be centered in the image
+- **Busy, cluttered compositions** — keep it clean and minimal. One object, not five.
 - Bright/colorful palettes — stay dark and moody, on-brand
 - Logos — don't ask AI to render the KV logo
 - Important visual elements near the edges — they'll get cropped in grid view or covered by UI
