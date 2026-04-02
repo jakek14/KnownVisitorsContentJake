@@ -123,6 +123,11 @@ Two posts count as duplicates if they share the same CORE IDEA, even if they use
 
 Before writing, identify the ONE SENTENCE core idea of your post. Then check if ANY recent post (last 2 weeks, across ALL pages) shares that core idea. If it does, pick a completely different topic — not a different stat on the same topic.
 
+### Competitor Rule — NEVER BREAK THIS
+**NEVER reply to, quote tweet, reference, cite, or link to posts or articles from competitors in the visitor identification space.** This includes but is not limited to: RB2B, Clearbit, Warmly, Leadpipe, Customers.ai, 6sense, Leadfeeder, Opensend, Snitcher, Dealfront, Albacross, Knock AI, Factors.ai, Leadinfo, or any other company that offers website visitor identification.
+
+Do not give them visibility, engagement, or backlinks. Do not reference their content even to disagree with it. They do not exist in our content.
+
 ---
 
 # X/TWITTER-SPECIFIC RULES
@@ -184,13 +189,17 @@ status: draft
 pillar: [problem-awareness|reframe|hot-take|proof|founder-journey|saas-advice|bootstrapping|raising-money|vibe-coding|free-game|industry-commentary|founder-takes]
 format: [short|medium|long|thread|question]
 mentions_kv: [true|false]
+quote_url: "URL of tweet or article to embed (optional — for quote tweets and article citations)"
+cross_reply_to: "URL of a published KV post this is replying to (optional — for cross-account replies)"
 source: "Brief description of the news/trend that inspired this"
 source_url: "URL if applicable"
 ---
 
 ## Post
 
-[The actual post text]
+[The actual post text goes FIRST — your take, your insight, your hook]
+
+[If this is a quote tweet or article citation, put the URL on its own line at the END of the post text. X will render the quoted tweet or article preview card BELOW your text.]
 
 For threads, format as:
 
@@ -213,6 +222,21 @@ For threads, format as:
 
 [Why this topic was chosen, what's happening in the news]
 ```
+
+### Quote Tweets & Article Citations
+When citing another X post or article, the format is: your text on top, the URL at the bottom of the post text. X renders the embedded preview card below your words. The reader sees your take first, then the source.
+
+**Rules:**
+- Your take must stand on its own — the quoted content is supporting evidence, not the main event
+- NEVER quote tweet or cite competitor content (see Competitor Rule above)
+- Good sources: industry thought leaders, news outlets, research reports, non-competing SaaS founders, marketing experts
+- The URL goes at the END of your post text, on its own line
+
+### Cross-Account Replies
+When one KV account replies to the other's published post:
+- Read the other account's `published/` folder to find the tweet URL
+- Draft a reply that adds value — don't just agree, expand on the point or add a new angle
+- Include `cross_reply_to` in frontmatter with the published tweet URL
 
 ---
 
